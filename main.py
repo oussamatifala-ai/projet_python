@@ -14,3 +14,18 @@ class Voiture:
            print("chauffeur:", self.chauffeur.nom , self.chauffeur.prenom)
         else:
            print("Chauffeur:Aucun")
+class Employe:
+    def __init__(self,numeroPermis,nom,prenom):
+        self.numeroPermis = numeroPermis
+        self.nom = nom
+        self.prenom = prenom
+        self.voitureService = None
+    def afficherInformations(self):
+        print("Numero permis:", self.numeroPermis)
+        print("Nom:", self.nom )
+        print("Prenom:", self.prenom)
+        
+        if self.voitureService is not None
+            print("Voiture:", self.voitureService.marque, self.voitureService.matricule)
+        else:
+            peint("Voiture: Aucune")
