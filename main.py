@@ -6,6 +6,7 @@ class Voiture:
         self.kilometrage=kilometrage
         self.chauffeur=None
     def afficherInformations(self):
+
         print("matricule:", self.matricule)
         print("annee:", self.annee)
         print("marque:", self.marque)
@@ -29,3 +30,21 @@ class Employe:
             print("Voiture:", self.voitureService.marque, self.voitureService.matricule)
         else:
             print("Voiture: Aucune")
+
+    def affecterVoiture(self, voiture):
+        if self.voitureService is not None:
+            print("Erreur: cet employe possede deja une voiture")
+        elif voiture.chauffeur is not None:
+            print("Erreur: cette voiture est deja attribuee")
+        else:
+            self.voitureService = voiture
+            voiture.chauffeur = self
+            print("Voiture attribuee avec succes")
+
+    def retirerVoiture(self):
+        if self.voitureService is None:
+            print("Aucune voiture a retirer")
+        else:
+            self.voitureService.chauffeur = None
+            self.voitureService = None
+            print("Voiture retiree avec succes")
