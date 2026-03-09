@@ -85,6 +85,6 @@ e1.retirerVoiture()
 print("=== Apres retrait ===")
 e1.afficherInformations()
 v1.afficherInformations()
-
+# Test d affectation interdite
 print("=== Test d affectation interdite ===")
 e3.affecterVoiture(v2)
