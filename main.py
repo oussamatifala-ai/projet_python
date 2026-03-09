@@ -25,7 +25,7 @@ class Employe:
         print("Nom:", self.nom )
         print("Prenom:", self.prenom)
         
-        if self.voitureService is not None
+        if self.voitureService is not None:
             print("Voiture:", self.voitureService.marque, self.voitureService.matricule)
         else:
-            peint("Voiture: Aucune")
+            print("Voiture: Aucune")
