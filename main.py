@@ -56,3 +56,35 @@ e3 = Employe("P789", "Sara", "Amine")
 v1 = Voiture("AA111", 2022, "Toyota", 30000)
 v2 = Voiture("BB222", 2021, "Honda", 45000)
 v3 = Voiture("CC333", 2020, "Ford", 60000)
+
+print("=== Employes ===")
+e1.afficherInformations()
+e2.afficherInformations()
+e3.afficherInformations()
+
+print("=== Voitures ===")
+v1.afficherInformations()
+v2.afficherInformations()
+v3.afficherInformations()
+# Affectation des voitures aux employes
+print("=== Affectation des voitures ===")
+e1.affecterVoiture(v1)
+e2.affecterVoiture(v2)
+print("=== Apres affectation ===")
+e1.afficherInformations()
+e2.afficherInformations()
+e3.afficherInformations()
+
+v1.afficherInformations()
+v2.afficherInformations()
+v3.afficherInformations()
+
+print("=== Retrait de voiture ===")
+e1.retirerVoiture()
+
+print("=== Apres retrait ===")
+e1.afficherInformations()
+v1.afficherInformations()
+
+print("=== Test d affectation interdite ===")
+e3.affecterVoiture(v2)
